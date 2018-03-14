@@ -1,0 +1,7 @@
+#!/bin/bash
+
+gcc -c find_min_max.c
+gcc -c utils.c
+gcc -c sequential_min_max.c
+gcc -o res find_min_max.c sequential_min_max.c utils.c
+./res 2 15
