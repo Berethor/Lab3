@@ -18,6 +18,5 @@ struct MinMax GetMinMax(int *array, unsigned int begin, unsigned int end) {
            min_max.max = array[c];
         }
     }
-  // your code here
   return min_max;
 }

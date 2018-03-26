@@ -4,4 +4,13 @@ gcc -c find_min_max.c
 gcc -c utils.c
 gcc -c sequential_min_max.c
 gcc -o res find_min_max.c sequential_min_max.c utils.c
+
 ./res 2 15
+
+gcc -c find_min_max.c
+gcc -c parallel_min_max.c
+gcc -c utils.c
+gcc -c sequential_min_max.c
+gcc -o res2 parallel_min_max.c  utils.c  find_min_max.c
+./res2 2 15
+
